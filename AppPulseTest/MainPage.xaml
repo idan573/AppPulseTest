@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="AppPulseTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppPulseTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:WinRTXamlToolkit.Controls"
+    mc:Ignorable="d">
+
+        
+   
+    <controls:UniformGrid Rows="5" Columns="1">
+        <Button Name="InternetRequest" Background="Aqua" Click="OnInternet" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">Internet device</Button>
+        <Button Name="Crash" Background="Red" Click="Crush" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">Crash</Button>
+        <Button Name="HttpRequest" Background="Yellow" Click="OnHttpRequest" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">Report Http request</Button>
+        <Button Name="StopAn" Background="Green" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">Stop analysis</Button>
+        <Button Name="Cancel" Background="BlueViolet" Click="OnCancel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">Cancel</Button>
+    </controls:UniformGrid>
+</Page>
